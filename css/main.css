@@ -1,0 +1,56 @@
+body {
+  height: 100vh;
+  background-image: url("/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+.container .heroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.container .heroes .hero {
+  width: 80px;
+  height: 84px;
+  margin: 4px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transform: skewX(-14deg);
+  overflow: hidden;
+  background-color: #555;
+  transition: transform 0.1s, background-color 0.6s;
+}
+
+.container .heroes .hero:hover {
+  background-color: #ff9c90;
+  transform: scale(1.35) skewX(-14deg);
+  z-index: 1;
+}
+
+.container .heroes .hero img {
+  width: 140%;
+  height: 100%;
+  transform: translateX(-16px) skewX(14deg);
+  object-fit: contain;
+}
+
+.container .logo {
+  width: 300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container .logo img {
+  width: 100%;
+}
